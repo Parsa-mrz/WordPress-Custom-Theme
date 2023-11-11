@@ -1,2 +1,2 @@
 <?php
-require_once(__DIR__ . '/assets/views/comments.php');
+require_once(__DIR__ . '/templates/comments.php');

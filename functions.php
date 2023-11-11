@@ -1,6 +1,9 @@
 <?php
 require_once(__DIR__ . '/app/Boot/bootstrap.php');
 
+// ================ Add layout controller 
+require_once(__DIR__ . '/app/Controllers/LayoutController.php');
+
 // ================ Add option controller 
 require_once(__DIR__ . '/app/Controllers/OptionController.php');
 
@@ -9,3 +12,5 @@ require_once(__DIR__ . '/app/Controllers/WoocommerceController.php');
 
 // ================ Add Blog controller 
 require_once(__DIR__ . '/app/Controllers/BlogController.php');
+
+

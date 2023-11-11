@@ -1,2 +1,2 @@
 <?php
-require_once(__DIR__ . '/assets/views/blog/archive.php');
+require_once(__DIR__ . '/templates/blog/archive.php');

@@ -1,4 +1,5 @@
-<!--::footer_part start::-->
+<?php wp_footer() ?>
+<!-- !--::footer_part start::--> 
 <footer class="footer_part">
     <div class="footer_iner">
         <div class="container">

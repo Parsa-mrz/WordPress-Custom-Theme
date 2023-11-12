@@ -21,5 +21,4 @@ if (!defined('ABSPATH')) {
 }
 
 
-
-echo '</div></div></div></section>';
+echo ('</div></div></section>');

@@ -20,4 +20,4 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 ?>
-<div class="row justify-content-evenly g-4 columns-<?php echo esc_attr(wc_get_loop_prop('columns')); ?>">
+<div class="col-md-8 columns-<?= esc_attr(wc_get_loop_prop('columns')) ?>"><div class="product_list"><div class="row">

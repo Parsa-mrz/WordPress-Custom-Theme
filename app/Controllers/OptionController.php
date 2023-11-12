@@ -5,8 +5,8 @@ class OptionController
     public function __construct()
     {
 
-        add_action('after_setup_theme', [$this, 'hiisun_theme_setup']);
-        add_action('widgets_init', [$this, 'hiisun_widgets']);
+        add_action('after_setup_theme', [$this, 'cms_theme_setup']);
+        add_action('widgets_init', [$this, 'cms_widgets']);
     }
     /**
      * @since 1.0.0
@@ -15,7 +15,7 @@ class OptionController
      *
      * @return
      */
-    public function hiisun_theme_setup()
+    public function cms_theme_setup()
     {
         /** automatic feed link*/
         add_theme_support('automatic-feed-links');
@@ -41,7 +41,7 @@ class OptionController
      *
      * @return
      */
-    public function hiisun_widgets()
+    public function cms_widgets()
     {
         register_sidebar(array(
             'name' => __('blog', 'Hiisun-domain'),

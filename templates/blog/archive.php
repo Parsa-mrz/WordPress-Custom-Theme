@@ -30,7 +30,13 @@
         <div class="row">
             <div class="col-lg-8 mb-5 mb-lg-0">
                 <div class="blog_left_sidebar">
-                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <?php
+                    $args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => 3,
+                    );
+                    $query = new WP_Query($args);
+                    if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
                             <article class="blog_item">
                                 <div class="blog_item_img">
                                     <?php the_post_thumbnail('card-img rounded-0') ?>
@@ -52,9 +58,10 @@
                                 </div>
                             </article>
                         <?php endwhile; ?>
+                        <!-- Restore original post data -->
+                        <?php wp_reset_postdata(); ?>
                     <?php endif; ?>
-
-                    <nav class="blog-pagination justify-content-center d-flex">
+                    <!-- <nav class="blog-pagination justify-content-center d-flex">
                         <ul class="pagination">
                             <li class="page-item">
                                 <a href="#" class="page-link" aria-label="قبلی">
@@ -73,7 +80,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </nav>
+                    </nav> -->
                 </div>
             </div>
             <div class="col-lg-4">

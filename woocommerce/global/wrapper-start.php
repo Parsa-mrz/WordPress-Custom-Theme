@@ -19,7 +19,10 @@
 if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
-echo '<section id="section-one"><div class="container section-one pt-5 pb-5 px-0"><div class="container-fluid"><div class="row justify-content-between">';
+if (!is_product()) {
+	echo ('<section class="product_list section_padding"><div class="container"><div class="row">');
+}
+
 /**
  * Hook: woocommerce_sidebar.
  *

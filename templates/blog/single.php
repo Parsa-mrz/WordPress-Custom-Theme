@@ -40,15 +40,6 @@
                                     <li><a><i class="far fa-user"></i> <?php the_author() ?></a></li>
                                     <li><a><i class="far fa-comments"></i> 3 نظر</a></li>
                                 </ul>
-                                <p class="excert">
-                                    <?php the_excerpt() ?>
-                                </p>
-
-                                <div class="quote-wrapper">
-                                    <div class="quotes">
-                                        برای اطلاع از آخرین اخبار مربوط به تکنولوژی می توانید به این سایت مراجعه کنید.
-                                    </div>
-                                </div>
                                 <p>
                                     <?php the_content() ?>
                                 </p>
@@ -118,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        // Check if comments are open or if there are comments.
+                        <!-- // Check if comments are open or if there are comments. -->
                         <?php
                         if (comments_open() || get_comments_number()) :
                             comments_template();

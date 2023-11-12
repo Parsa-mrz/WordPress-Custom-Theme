@@ -44,12 +44,10 @@
 <!-- product list part end-->
 
 <!-- feature part here -->
-<?php require(get_template_directory() . "/templates/parts/feature-part.php") ?>
+<?php do_action("feature_part_section") ?>
 <!-- feature part end -->
 
-
-
 <!-- subscribe part here -->
-<?php require(get_template_directory() . "/templates/parts/subscribe-part.php") ?>
+<?php do_action("subscribe_part_section") ?>
 <!-- subscribe part end -->
 <?php get_footer() ?>
